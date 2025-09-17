@@ -1,6 +1,9 @@
 # Targeted Physical Evasion Attacks in the Near-Infrared Domain 
 
-The idea of this framework is to take traffic sign images of a given dataset and to perturb the signs surface to cause a (un-)targeted misclassification against classification and detection models. The perturbations consist of square patches that are color transformed to simulate an infrared light source. To optimize towards the misclassification goal, we use black-box optimization strategies which are at the heart of this framework.
+This repository contains the Python source code for the experiments of the paper "Targeted Physical Evasion Attacks in the Near-Infrared Domain", to be published in the Proceedings of the Network and Distributed Systems Security Symposium (NDSS) 2026.
+
+- [arXiV](https://arxiv.org/pdf/2509.02042)
+- Published version: TBD
 
 Please refer to the Artifact Appendix for additional details. In contrast to the Appendix, the relevant Mapillary data is now included within this repository and besides the segmentation model no additional data needs to be downloaded.
 
@@ -212,7 +215,7 @@ python3 infrared_perturbation.py --patch_count 192
 
 #### Example 3: Change the width of patches (l)
 
-The perturbation pixel size is determined as $\text{image_width} / \text{mesh_count}$.
+The perturbation pixel size is determined as $\text{image\_width} / \text{mesh\_count}$.
 So, the perturbation pixels are aligned at a grid with `mesh_count` positions in x- and `mesh_count` positions in
 y-direction.
 
@@ -309,3 +312,19 @@ optional arguments:
   --instances INSTANCES
                         Reduces the number of files the experiment is executed on.
 ```
+
+## Citation
+```
+@misc{zimmer2025targetedphysicalevasionattacks,
+      title={Targeted Physical Evasion Attacks in the Near-Infrared Domain}, 
+      author={Pascal Zimmer and Simon Lachnit and Alexander Jan Zielinski and Ghassan Karame},
+      year={2025},
+      eprint={2509.02042},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2509.02042}, 
+}
+```
+## Contact
+
+Feel free to contact the first author via the e-mail provided on the publication if you have any questions.
