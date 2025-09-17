@@ -5,7 +5,7 @@ This repository contains the Python source code for the experiments of the paper
 - [arXiV](https://arxiv.org/pdf/2509.02042)
 - Published version: TBD
 
-Please refer to the Artifact Appendix for additional details. In contrast to the Appendix, the relevant Mapillary data is now included within this repository and besides the segmentation model no additional data needs to be downloaded.
+Please refer to the Artifact Appendix of the published version for additional details on the experiments. In contrast to the Appendix, the relevant Mapillary data is now included within this repository and besides the segmentation model no additional data needs to be downloaded.
 
 ## Setup
 
@@ -215,7 +215,7 @@ python3 infrared_perturbation.py --patch_count 192
 
 #### Example 3: Change the width of patches (l)
 
-The perturbation pixel size is determined as $\text{image\_width} / \text{mesh\_count}$.
+The perturbation pixel size is determined as image\_width $/$ mesh\_count.
 So, the perturbation pixels are aligned at a grid with `mesh_count` positions in x- and `mesh_count` positions in
 y-direction.
 
